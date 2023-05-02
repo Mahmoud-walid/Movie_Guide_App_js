@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins-medium;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(175deg, #1c1917 50%, #ffb92a 50%);
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+.container {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em 1.8em;
+    background: #1e293b;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+.search_container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+}
+
+@media (max-width: 375px) {
+    .search_container {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .search_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.search_container input,
+.search_container button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+    padding: 0.7em;
+}
+
+.search_container input {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #a0a0a8;
+}
+
+@media (max-width: 767px) {
+    .search_container input{
+        margin-top: 200px;
+    }
+}
+
+.search_container input:focus {
+    border-color: white;
+}
+
+.search_container button {
+    background-color: #ffb92a;
+    cursor: pointer;
+    border: none;
+}
+
+/* Start information styles */
+
+.info {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+}
+
+.info .poster {
+    width: 200px;
+    position: relative;
+}
+
+.info .info_content {}
+
+.info .info_content h2.title {
+    background: linear-gradient(160deg, #ffb92a 40%, wheat 60%);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-repeat: repeat;
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 767px) {
+    .info {
+        display: block;
+    }
+}
+
+.info .info_content .rating {
+    display: flex;
+    margin: 8px 0px;
+}
+
+.info .info_content .rating i {
+    width: 1em;
+    margin-right: 8px;
+}
+
+.info .info_content .rating h4.imdbRating {
+    color: wheat;
+    font-size: 70%;
+}
+
+.info .info_content .language,
+.info .info_content .genre,
+.info .info_content .details {
+    color: rgb(212, 212, 212);
+    font-size: 80%;
+}
+
+.info .info_content .language .language_content,
+.info .info_content .genre .genre_content {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.info .info_content .language .language_content div,
+.info .info_content .genre .genre_content div {
+    margin: 4px 8px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 0.3em;
+    padding: 3px 8px;
+}
+
+.info .info_content .details {
+    /* text-align: center; */
+}
+
+.info .info_content .details .type,
+.info .info_content .details .runtime,
+.info .info_content .details .year,
+.info .info_content .details .rated {
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+.info .info_content .genre {
+    margin: 8px 0px;
+}
+
+.info .info_content .cast_detail,
+.info .info_content .plot_detail {}
+
+.info .info_content .writer_detail h3,
+.info .info_content .cast_detail h3,
+.info .info_content .plot_detail h3 {
+    font-family: Poppins-bold;
+    font-size: 110%;
+    color: wheat;
+}
+
+.info .info_content .writer_detail p,
+.info .info_content .cast_detail p,
+.info .info_content .plot_detail p {
+    font-family: Poppins-ExtraLight;
+    color: wheat;
+    font-size: 85%;
+    line-height: 140%;
+}
+
+
+/* End information styles */
